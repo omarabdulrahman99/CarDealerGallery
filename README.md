@@ -1,2 +1,2 @@
 # CarDealerGallery
-Exercise with media queries for mobile,tablet,desktop, using react, &amp; custom webpack config.
+Exercise with media queries for mobile,tablet,desktop, using ReactJS, &amp; custom webpack config.

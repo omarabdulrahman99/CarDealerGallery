@@ -1,0 +1,482 @@
+.app {
+
+
+	margin:0;
+	padding:0;
+	min-width:100%;
+	height:100vh;
+
+
+	display:grid;
+	grid-template-rows: 110px 1fr;
+	grid-template-columns:1fr;
+
+}
+
+body {
+
+  margin: 0;
+  padding: 0;
+  height:100vh;
+}
+
+
+
+.header{
+	background:#f1f1f1;
+	text-align:center;
+}
+
+.tiles {
+
+	display:grid;
+	
+	grid-row:2/2;
+
+	grid-template-columns: repeat(auto-fill, 500px);
+    grid-auto-rows: 281px;
+
+    grid-gap:4rem;
+    margin-left:5rem;
+    margin-top:5rem;
+    margin-right:5rem;
+    margin-bottom:5rem;
+
+
+}
+
+.tile{
+
+	display:grid;
+	grid-template-rows:1fr 3fr;
+	border:gray;
+	border:1px solid #c6c7c7;
+
+
+}
+
+.tilebody{
+
+	display:grid;
+	grid-template-columns:1.75fr 2fr;
+
+}
+
+.tileheader{
+
+	display:grid;
+
+}
+
+.leaserate{
+
+	display:grid;
+	grid-column:1/2;
+
+
+
+}
+
+.leasecenter{
+	margin: 0 auto;
+	margin-top:30px;
+}
+
+.claimbtncontainer{
+
+	display:grid;
+	grid-column:1/2;
+
+}
+
+.leasecard div{
+
+	display:inline-block;
+	text-align:center;
+}
+
+.leasetext1 {
+
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 30px;
+	letter-spacing: 0px;
+	word-spacing: 0px;
+	color: #27B1FF;
+	font-weight: 900;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+}
+
+.leasetext2 {
+
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 17px;
+	letter-spacing: 0px;
+	word-spacing: 0px;
+	color: #707D7A;
+	font-weight: 700;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+
+}
+
+.leasetext3 {
+
+	margin-top:10px;
+	text-align:center;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 20px;
+	letter-spacing: 0px;
+	word-spacing: 0px;
+	color: #707D7A;
+	font-weight: 700;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+
+}
+
+
+.tileheader {
+
+	display:flex;
+	justify-content:start;
+	color:white;
+	background-color:#4B5452;
+	text-align:left;
+	align-items:center;
+	font-size:30px;
+	padding:10px;
+
+
+}
+
+.claimbtncontainer{
+	text-align:center;
+}
+
+.claimbutton {
+
+
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2dabf9), color-stop(1, #0688fa));
+	background:-moz-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+	background:-webkit-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+	background:-o-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+	background:-ms-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+	background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2dabf9', endColorstr='#0688fa',GradientType=0);
+	background-color:#2dabf9;
+
+	
+	
+	
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:549;
+	
+	text-decoration:none;
+	height:45px;
+	text-align:center;
+	margin-left:20px;
+	margin-bottom:20px;
+	margin-top:30px;
+	margin-right:20px;
+	display:inline-block;
+	line-height: 50px;
+
+}
+.claimbutton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0688fa), color-stop(1, #2dabf9));
+	background:-moz-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+	background:-webkit-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+	background:-o-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+	background:-ms-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0688fa', endColorstr='#2dabf9',GradientType=0);
+	background-color:#0688fa;
+}
+.claimbutton:active {
+	position:relative;
+	top:1px;
+}
+
+.carimg {
+
+	display:grid;
+	grid-row:1 / span 2;
+	grid-column:2/2;
+
+}
+
+.carimgset {
+
+
+	margin-top:20px;
+	width:100%
+
+
+}
+
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+
+		.tilebody{
+
+			display:grid;
+			grid-template-columns:1.75fr 2fr;
+
+		}
+
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  .tilebody{
+
+	display:grid;
+	grid-template-columns:1.75fr 2fr;
+
+}
+
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .tilebody{
+
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows:1fr 1fr;
+
+}
+
+.tiles {
+
+	display:grid;
+	
+	grid-row:2/2;
+
+	grid-template-columns: repeat(auto-fill, 281px);
+    grid-auto-rows: 500px;
+
+    grid-gap:4rem;
+    margin-left:5rem;
+    margin-top:5rem;
+    margin-right:5rem;
+    margin-bottom:5rem;
+
+
+}
+
+.carimg {
+
+	display:grid;
+	grid-row:1/2;
+	grid-column:1/2;
+	
+
+}
+
+.leaserate{
+
+display:grid;
+grid-row:1/2;
+grid-column:1/2;
+
+}
+
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  .tilebody{
+
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows:1fr 1fr;
+
+}
+.tiles {
+
+	display:grid;
+	
+	grid-row:2/2;
+
+	grid-template-columns: repeat(auto-fill, 281px);
+    grid-auto-rows: 500px;
+
+    grid-gap:4rem;
+    margin-left:5rem;
+    margin-top:5rem;
+    margin-right:5rem;
+    margin-bottom:5rem;
+
+
+}
+
+.carimg {
+
+	display:grid;
+	grid-row:1/2;
+	grid-column:1/2;
+	
+
+}
+
+
+.leaserate{
+
+display:grid;
+grid-row:1/2;
+grid-column:1/2;
+
+}
+
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  .tilebody{
+
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows:1fr 1fr;
+
+}
+
+
+.tiles {
+
+	display:grid;
+	
+	grid-row:2/2;
+
+	grid-template-columns: repeat(auto-fill, 281px);
+    grid-auto-rows: 500px;
+
+    grid-gap:4rem;
+    margin-left:5rem;
+    margin-top:5rem;
+    margin-right:5rem;
+    margin-bottom:5rem;
+
+
+}
+
+.carimg {
+
+	display:grid;
+	grid-row:1/2;
+	grid-column:1/2;
+	
+
+}
+
+.leaserate{
+
+display:grid;
+grid-row:1/2;
+grid-column:1/2;
+
+}
+
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .tilebody{
+
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows:1fr 1fr;
+
+}
+
+
+.tiles {
+
+	display:grid;
+	
+	grid-row:2/2;
+
+	grid-template-columns: repeat(auto-fill, 281px);
+    grid-auto-rows: 500px;
+
+    grid-gap:4rem;
+    margin-left:5rem;
+    margin-top:5rem;
+    margin-right:5rem;
+    margin-bottom:5rem;
+
+
+}
+  
+.carimg {
+
+	display:grid;
+	grid-row:1/2;
+	grid-column:1/2;
+
+}
+
+.claimbtncontainer{
+
+	display:grid;
+	grid-column:1/2;
+
+}
+
+.leaserate{
+
+display:grid;
+grid-row:1/2;
+grid-column:1/2;
+
+}
+
+
+}

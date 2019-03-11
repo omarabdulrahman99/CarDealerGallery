@@ -1,0 +1,56 @@
+{
+  "name": "ds-demo",
+  "version": "1.0.0",
+  "description": "DealerScience front-end interview questions",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --config config/webpack.base.config.js --open --hot --history-api-fallback --env.PLATFORM=local --env.VERSION=stag",
+    "prebuild": "webpack --mode production --config config/webpack.prod.config.js --env.PLATFORM=production --env.VERSION=stag --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dealerscience/ds-demo.git"
+  },
+  "keywords": [],
+  "author": "DealerScience",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dealerscience/ds-demo/issues"
+  },
+  "homepage": "https://github.com/dealerscience/ds-demo#readme",
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "file-loader": "^3.0.1",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-router-dom": "^4.3.1",
+    "reactstrap": "^7.1.0",
+    "url-loader": "^1.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/plugin-proposal-export-namespace-from": "^7.2.0",
+    "@babel/plugin-proposal-throw-expressions": "^7.2.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-async-to-generator": "^7.2.0",
+    "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^2.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-merge": "^4.2.1",
+    "webpack-visualizer-plugin": "^0.1.11"
+  }
+}
